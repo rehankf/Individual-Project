@@ -6,14 +6,14 @@
 
 This project develops two complementary probabilistic approaches to transformer condition assessment and lifetime prediction:
 
-1. **Markov degradation model** - A 5-state absorbing Markov chain models population-level transformer degradation over 30–40 year service lives. Maximum likelihood estimation (MLE) validates transition matrix recovery from observed state sequences to calculate mean remaining useful life and survival probability
+1. **Markov degradation model** - A 5-state absorbing Markov chain models population-level transformer degradation over 40 year service lives. Maximum likelihood estimation (MLE) validates transition matrix recovery from observed state sequences to calculate mean remaining useful life and survival probability
 
-2. **Machine learning health state classification** - Logistic Regression and Random Forest classifiers predict individual transformer health states from synthetic dissolved gas analysis (DGA) data grounded in real-world gas concentration thresholds
+2. **Machine learning health state classification** - Logistic regression and random forest classifiers predict individual transformer health states from synthetic dissolved gas analysis (DGA) data grounded in real-world gas concentration thresholds
 
 ---
 
 ## Contextual Overview
-```
+
 
 **Data flow:**
 - Markov model: Simulated transformer histories → state transition counts → estimated P matrix → RUL/survival curves
@@ -56,9 +56,9 @@ Execute all cells sequentually in Jupyter from Run -> Run All Cells
 ### Markov Chain Model
 
 **Estimation:** Maximum Likelihood Estimator (MLE) for transition probabilities:
-```
+
 P̂_ij = n_ij / n_i
-```
+
 where `n_ij` = observed transitions from state i → j, `n_i` = total visits to state i.
 
 **Remaining Useful Life:** Computed via fundamental matrix N = (I − Q)⁻¹, where Q is the transient-to-transient sub-block of P. RUL from state i is the sum of row i of N.
