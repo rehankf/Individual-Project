@@ -30,17 +30,8 @@ All code is implemented in Jupyter notebook using Python with NumPy, pandas, mat
 - Python
 - JupyterLite (browser-based)
 
-### Required Python Libraries
-
-```bash
-pip install numpy==1.24.3 pandas==2.0.2 matplotlib==3.7.1 seaborn==0.12.2 scikit-learn==1.3.0
-```
-
-Alternatively, install the latest compatible versions:
-
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn
-```
+### Python Libraries
+numpy, pandas, matplotlib, seaborn, scikit-learn
 
 ### Environment Setup
 1. Navigate to https://jupyter.org/try-jupyter/lab/
@@ -90,7 +81,7 @@ where `n_ij` = observed transitions from state i → j, `n_i` = total visits to 
 - Standardised input features (zero mean, unit variance)
 
 **Random Forest:**
-- 50 trees, max depth 7, min samples per split 2
+- 50 trees, max depth 5, min samples per split 2
 
 ---
 
@@ -109,6 +100,6 @@ where `n_ij` = observed transitions from state i → j, `n_i` = total visits to 
 
 ### Planned Improvements
 
-2. **Extended feature set** - Investigate furan analysis (paper insulation degradation) and frequency response analysis (FRA)
+**Extended feature set** - Investigate furan analysis (paper insulation degradation) and frequency response analysis (FRA)
 
 ---
