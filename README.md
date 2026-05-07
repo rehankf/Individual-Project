@@ -16,8 +16,8 @@ This project develops two complementary probabilistic approaches to transformer 
 
 
 **Data flow:**
-- Markov model: Simulated transformer histories → state transition counts → estimated P matrix → RUL/survival curves
-- ML model: Synthetic DGA samples → trained classifier → predicted health state
+- Markov model: Simulated transformer histories -> state transition counts -> estimated P matrix -> RUL/survival curves
+- ML model: Synthetic DGA samples -> trained classifier -> predicted health state
 
 All code is implemented in Jupyter notebook using Python with NumPy, pandas, matplotlib, seaborn, and scikit-learn.
 
@@ -26,19 +26,14 @@ All code is implemented in Jupyter notebook using Python with NumPy, pandas, mat
 ## Installation Instructions
 
 ### Prerequisites
-
-- Python
 - JupyterLite (browser-based)
-
-### Python Libraries
-numpy, pandas, matplotlib, seaborn, scikit-learn
 
 ### Environment Setup
 1. Navigate to https://jupyter.org/try-jupyter/lab/
 2. Upload `ProjectNEW_25_.ipynb`
 3. All required libraries are pre-installed
 
----
+--- 
 
 ## How to Run the Software
 Execute all cells sequentually in Jupyter from Run -> Run All Cells 
@@ -59,7 +54,7 @@ Execute all cells sequentually in Jupyter from Run -> Run All Cells
 
 P̂_ij = n_ij / n_i
 
-where `n_ij` = observed transitions from state i → j, `n_i` = total visits to state i.
+where n_ij = observed transitions from state i to j, n_i = total visits to state i.
 
 **Remaining Useful Life:** Computed via fundamental matrix N = (I − Q)⁻¹, where Q is the transient-to-transient sub-block of P. RUL from state i is the sum of row i of N.
 
