@@ -78,7 +78,7 @@ where n_ij = observed transitions from state i to j, n_i = total visits to state
 
 ### Known Limitations
 
-1. **Synthetic data only** — Reported classification accuracies (95-97%) are optimistic.
+1. **Synthetic data only** - Reported classification accuracies (95-97%) are optimistic.
 
 2. **Time-homogeneous Markov chain** - Transition probabilities are time-constant. In reality, degradation accelerates with age, loading stress, and environmental factors
 
