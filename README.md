@@ -30,7 +30,7 @@ All code is implemented in Jupyter notebook using Python with NumPy, pandas, mat
 
 ### Environment Setup
 1. Navigate to https://jupyter.org/try-jupyter/lab/
-2. Upload `ProjectNEW_25_.ipynb`
+2. Upload the .pynb file
 3. All required libraries are pre-installed
 
 --- 
