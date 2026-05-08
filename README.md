@@ -50,7 +50,7 @@ P̂_ij = n_ij / n_i
 
 where n_ij = observed transitions from state i to j, n_i = total visits to state i.
 
-**Remaining Useful Life:** Computed via fundamental matrix N = (I − Q)⁻¹, where Q is the transient-to-transient sub-block of P. RUL from state i is the sum of row i of N.
+**Remaining Useful Life:** Computed via fundamental matrix N = (I − Q)⁻¹, where Q is the transient-to-transient 4x4 sub-matrix of P. RUL from state i is the sum of row i of N.
 
 **Survival Function:** S(t) = 1 − [H₀·Pᵗ]_VeryPoor, the probability of not yet reaching the absorbing state by year t.
 
@@ -78,14 +78,9 @@ where n_ij = observed transitions from state i to j, n_i = total visits to state
 
 ### Known Limitations
 
-1. **Synthetic data only** — Reported classification accuracies (96–98%) are optimistic. Real-world performance is expected to be 80–90% due to:
-   - Manufacturer design variations not captured in synthetic data
-   - Oil top-ups diluting gas concentrations
-   - Inter-laboratory DGA measurement variability
+1. **Synthetic data only** — Reported classification accuracies (95-97%) are optimistic.
 
 2. **Time-homogeneous Markov chain** - Transition probabilities are time-constant. In reality, degradation accelerates with age, loading stress, and environmental factors
-
-3. **Decoupled Markov and ML components** - The two methods are presented independently. Combining them into a unified end-to-end pipeline (DGA → classifier → predicted state → Markov RUL) would require longitudinal field data linking DGA readings to subsequent state transitions, which was not available.
 
 ### Planned Improvements
 
