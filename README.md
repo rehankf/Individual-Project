@@ -38,12 +38,6 @@ All code is implemented in Jupyter notebook using Python with NumPy, pandas, mat
 ## How to Run the Software
 Execute all cells sequentually in Jupyter from Run -> Run All Cells 
 
-2. **Execute all cells sequentially:**
-   - In Jupyter: `Cell → Run All`
-   - Or run cells individually by pressing `Shift + Enter`
-
-3. **Expected runtime:** ~2–3 minutes for full execution on a standard laptop
-
 ---
 
 ## Technical Details
